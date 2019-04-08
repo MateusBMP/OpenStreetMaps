@@ -1,5 +1,5 @@
 {
-    "name": "Geocoding",
+    "name": "mateusbmp/geocoding",
     "description": "Classe de interação com API do OpenStreetMaps",
     "type": "library",
     "version": "1.0.0",
