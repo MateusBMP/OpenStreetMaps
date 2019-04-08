@@ -16,6 +16,13 @@ Usando o XAMPP e posicionando a pasta do projeto na pasta htdocs, usando como no
 
 Como o projeto é baseado em uma classe e em testes de suas funcoes, sua pagina inicial serve apenas de interacao para todo o projeto. Ou seja, a pagina inicial independe ao bom funcionamento da aplicacao. Use-a apenas para testes.
 
+Para uso das classes a partir do _composer_, e necessario a sua execucao, ou seja:
+
+- ``composer install``
+- ``composer dump-autoload``
+
+Se necessario, use posteriormente ``composer update`` e ``composer dump-autoload -o``.
+
 ## Exemplos de uso
 
 Para exemplos simplificados de uso, veja os _feature tests_ presentes no arquivo **featureTest.php** no diretorio _src/tests/_. Tambem ha exemplos simples nas views presentes do diretorio _src/src/views/_.
