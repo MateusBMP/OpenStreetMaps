@@ -1,6 +1,7 @@
 <?php
 
-require_once(__DIR__.'\..\class\geocoding.php');
+require_once '../../vendor/autoload.php';
+use OSM\Geocoding;
 
 $search = ['57020-050'];
 $geocoding = new Geocoding();
