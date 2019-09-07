@@ -1,7 +1,9 @@
 <?php
 
+require_once(__DIR__.'/../../vendor/autoload.php');
+
 use PHPUnit\Framework\TestCase;
-require_once(__DIR__.'\..\src\class\geocoding.php');
+use OSM\Geocoding;
 
 class FeatureTest extends TestCase {
     private $time = 1;    // use value >= 1

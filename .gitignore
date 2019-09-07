@@ -1,2 +1,6 @@
+# Visual Studio code
 *.code-workspace
-composer.lock
+
+# Composer and its libraries
+vendor/
+.phpunit.result.cache
