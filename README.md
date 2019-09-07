@@ -4,25 +4,26 @@
 
 ## Apresentacao
 
-Esse projeto simplifica o uso da API do OpenStreetMaps, transcrevendo-a a funcoes simples com poucos parametros de entrada. Toda sua documentacao foi feita usando _[Markdown](https://www.markdownguide.org)_.
+Esse projeto simplifica o uso da API do OpenStreetMaps, a _[Nomitatim](nominatim.openstreetmap.org)_, transcrevendo-a a funcoes simples com poucos parametros de entrada. O namespace utilizado para a classe principal e **OSM**.
 
-Para visualizacao mais facil da documentacao, pode-se usar qualquer leitor de Markdown, como o [Dillinger](https://dillinger.io).
+Toda sua documentacao foi feita usando _[Markdown](https://www.markdownguide.org)_. Entao, para visualizacao mais facil da documentacao, pode-se usar qualquer leitor de Markdown, como o [Dillinger](https://dillinger.io).
 
-## Executando o sistema
+## Requisitos de sistema
 
-Usando o XAMPP e posicionando a pasta do projeto na pasta htdocs, usando como nome de pasta _\\osm\\_, pode-se acessar a pagina inicial pelo endereco:
+- [PHP 7.2.12](http://www.php.net)
+- [Composer 1.8.0](https://getcomposer.org)
 
-- <http://localhost/osm/src/src/views/home.php>
+## Instalando a biblioteca
 
-Como o projeto é baseado em uma classe e em testes de suas funcoes, sua pagina inicial serve apenas de interacao para todo o projeto. Ou seja, a pagina inicial independe ao bom funcionamento da aplicacao. Use-a apenas para testes.
+Como o projeto é baseado em uma classe, use-o a partir do _composer_. Assim, para instalar, execute:
 
-Para uso das classes a partir do _composer_, e necessario a sua execucao, ou seja:
+```terminal
+$ composer install
+$ composer dump-autoload
+```
 
-- ``composer install``
-- ``composer dump-autoload``
-
-Se necessario, use posteriormente ``composer update`` e ``composer dump-autoload -o``.
+Se necessario, use posteriormente `composer update` e `composer dump-autoload -o`.
 
 ## Exemplos de uso
 
-Para exemplos simplificados de uso, veja os _feature tests_ presentes no arquivo **featureTest.php** no diretorio _src/tests/_. Tambem ha exemplos simples nas views presentes do diretorio _src/src/views/_.
+Para exemplos simplificados de uso, veja os _feature tests_ presentes no arquivo **featureTest.php** no diretorio _tests/_.
