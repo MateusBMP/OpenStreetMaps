@@ -9,18 +9,15 @@
             "email": "mbmp@ic.ufal.br"
         }
     ],
-    "config": {
-        "vendor-dir": "src/vendor/"
-    },
     "autoload": {
         "psr-4": {
-            "OSM\\": "src/src/class/"
+            "OSM\\": "src/"
         }
     },
     "require": {
         "php": "^7.2"
     },
     "require-dev": {
-        "phpunit/phpunit": "6.5"
+        "phpunit/phpunit": "^8.3"
     }
 }

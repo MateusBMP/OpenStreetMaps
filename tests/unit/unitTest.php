@@ -1,7 +1,9 @@
 <?php
 
+require_once(__DIR__.'/../../vendor/autoload.php');
+
 use PHPUnit\Framework\TestCase;
-require_once(__DIR__.'\..\src\class\geocoding.php');
+use OSM\Geocoding;
 
 class UnitTest extends TestCase {
     private $baseSearch = ['57020-050'];
@@ -19,8 +21,8 @@ class UnitTest extends TestCase {
         $geocoding->generate($this->baseSearch);
         $output = $geocoding->saveRequest();
         $this->assertTrue($output);
-        $this->assertDirectoryNotExists(__DIR__.'\..\src\outputs\request.json');
-        unlink(__DIR__.'\..\src\outputs\request.json');
+        $this->assertDirectoryNotExists(__DIR__.'/../../src/ request.json');
+        unlink(__DIR__.'/../../src/request.json');
         sleep($this->time);
     }
 

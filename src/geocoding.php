@@ -116,7 +116,7 @@ class Geocoding {
             }
             $this->filename = $filename;
             $format = $this->getFormat();
-            $filedir = __DIR__."/../outputs/".$filename.".".$format;
+            $filedir = __DIR__."/".$filename.".".$format;
             $file = fopen($filedir, "w");
             if(flock($file, LOCK_EX) == FALSE) {
                 return false;
